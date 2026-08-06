@@ -1,4 +1,4 @@
-## ESCOPO
+### ESCOPO
 TEMA: Blog Culinário
 
 O Blog culinário foi escolhido por ser um projeto mais simples de ser executado e com maior facilidade de organização e atração para uma proposta de site. O projeto é de um blog culinário com foco em mostrar de forma simples e didática como se executar uma receita, com um passo a passo, imagens e descrição, tendo como público-alvo adultos que não possuem dotes culinários e estão dispostos a aprender.
@@ -20,9 +20,7 @@ RNF05: O código-fonte deve ser organizado, padronizado e de fácil manutenção
 RNF06: As imagens utilizadas devem possuir boa qualidade e ser otimizadas para não comprometer o desempenho do site.
 
 
-
-
-## Documentação
+### DOCUMENTAÇÃO
 
 ## Descrição do Projeto
 
