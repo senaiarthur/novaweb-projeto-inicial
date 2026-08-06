@@ -18,3 +18,44 @@ RNF03: O site deve ser responsivo, adaptando-se a computadores, tablets e smartp
 RNF04: As páginas devem carregar em tempo adequado para proporcionar uma boa experiência ao usuário.
 RNF05: O código-fonte deve ser organizado, padronizado e de fácil manutenção.
 RNF06: As imagens utilizadas devem possuir boa qualidade e ser otimizadas para não comprometer o desempenho do site.
+
+
+
+
+## Documentação
+
+## Descrição do Projeto
+
+Este projeto consiste no desenvolvimento de um blog culinário utilizando HTML5 e CSS3. O objetivo é disponibilizar receitas de forma organizada, oferecendo uma navegação simples, intuitiva e agradável para os usuários.
+
+## Integrante
+
+- Arthur
+
+## Estrutura Analítica do Projeto (EAP)
+
+### Documentação
+- Definição do objetivo do projeto.
+- Levantamento dos requisitos funcionais.
+- Levantamento dos requisitos não funcionais.
+- Elaboração do README.md.
+
+### Desenvolvimento Front-End
+- Criação da página inicial.
+- Criação da página de receitas.
+- Criação da página Sobre.
+- Desenvolvimento da estilização em CSS.
+
+### Organização e Publicação
+- Organização da estrutura de pastas.
+- Configuração do Git.
+- Criação do repositório no GitHub.
+- Publicação do projeto.
+
+## Tecnologias e Softwares Utilizados
+
+- HTML5
+- CSS3
+- Visual Studio Code
+- Git
+- GitHub
