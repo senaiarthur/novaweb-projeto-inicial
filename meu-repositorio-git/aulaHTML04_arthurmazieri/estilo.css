@@ -1,12 +1,13 @@
 /*Seletor universal */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
+    background-color: antiquewhite;
 }
 
 /* Seletor de classe */
 .titulo {
-    color: darkgreen;
+    color: brown;
 }
 
 .paragrafo-simples {
@@ -21,7 +22,7 @@
 
 /* Seletor de descendente*/
 nav a {
-    color: darkgreen;
+    color: darkred;
     text-decoration: none;
     margin-right: 15px;
 }
