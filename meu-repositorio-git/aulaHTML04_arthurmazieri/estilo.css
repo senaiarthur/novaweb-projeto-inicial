@@ -1,0 +1,12 @@
+/*Seletor universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor de classe */
+.titulo {
+    color: darkgreen;
+}
+
+/* Seletor de ID */
