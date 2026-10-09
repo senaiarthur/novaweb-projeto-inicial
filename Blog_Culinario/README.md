@@ -312,3 +312,177 @@ Após a conclusão do planejamento, serão realizadas as seguintes atividades:
 **Curso:** Técnico em Desenvolvimento de Sistemas
 **Unidade Curricular:** Projetos de Software
 **Instituição:** SENAI
+
+
+# Projeto Nova-Web - Especificações de UI/UX (Tela de Login)
+
+## 1. Conceitos de Usabilidade em Formulários
+
+### Labels vs. Placeholders
+
+As labels são utilizadas para identificar permanentemente os campos de um formulário, indicando qual informação deve ser preenchida. Já os placeholders apresentam exemplos ou orientações dentro dos campos.
+
+O placeholder não deve substituir a label, pois seu conteúdo desaparece quando o usuário começa a digitar, dificultando a identificação do campo. A utilização de labels melhora a clareza, a usabilidade e a acessibilidade do formulário.
+
+### Hierarquia Visual
+
+A hierarquia visual organiza os elementos da interface de acordo com sua importância, direcionando a atenção do usuário para as ações principais.
+
+* **Primary Button:** botão de ação principal, como "Entrar". Deve possuir maior destaque visual, utilizando uma cor de fundo diferenciada para facilitar sua identificação.
+* **Secondary Button:** botões de ações complementares, como "Criar Conta" e "Esqueci a Senha". Devem apresentar menor destaque visual, evitando competir com a ação principal.
+
+Essa diferenciação facilita a navegação e torna a interação mais intuitiva.
+
+## 2. Estados de Validação dos Campos de Entrada (Input States)
+
+Os estados dos campos de entrada indicam visualmente a situação de cada elemento durante a utilização do formulário.
+
+### Default (Padrão)
+
+Representa o estado inicial do campo, antes de qualquer interação do usuário.
+
+* Borda em cor neutra.
+* Label visível e legível.
+* Fundo que permita identificar claramente a área de preenchimento.
+
+### Focus (Foco)
+
+Indica que o usuário selecionou ou está navegando por determinado campo.
+
+* Alteração da cor da borda para destacar o campo.
+* Utilização de um contorno visual (outline) ou anel de foco.
+* Destaque suficiente para facilitar a identificação do elemento ativo.
+
+### Error (Erro)
+
+Indica que uma informação foi preenchida incorretamente ou não atende aos requisitos de validação.
+
+* Borda em tom vermelho.
+* Mensagem explicativa abaixo do campo.
+* Orientação clara sobre como corrigir o problema.
+
+O erro não deve ser indicado apenas pela cor, sendo necessário apresentar uma mensagem textual.
+
+### Success (Sucesso)
+
+Indica que o campo foi preenchido corretamente e passou pela validação.
+
+* Borda em tom verde.
+* Indicador visual de confirmação, como um ícone de verificação.
+* Feedback claro sobre o preenchimento correto.
+
+### Disabled (Desabilitado)
+
+Representa um campo temporariamente indisponível para interação.
+
+* Contraste visual reduzido.
+* Aparência diferenciada dos campos ativos.
+* Indicação de que o usuário não pode realizar alterações naquele momento.
+
+## 3. Padrões de Acessibilidade
+
+### Contraste de Cores
+
+A interface deve utilizar combinações de cores que garantam a legibilidade dos textos e dos elementos visuais.
+
+De acordo com as diretrizes WCAG, o contraste mínimo recomendado no nível AA é:
+
+* **Texto comum:** proporção mínima de 4,5:1.
+* **Texto grande:** proporção mínima de 3:1.
+
+Esses padrões facilitam a leitura, inclusive para pessoas com baixa visão ou dificuldades de percepção de cores.
+
+### Feedback para Leitores de Tela
+
+Os formulários devem apresentar informações que possam ser interpretadas por leitores de tela, permitindo que pessoas com deficiência visual compreendam e utilizem a interface.
+
+Boas práticas incluem:
+
+* Associar corretamente as labels aos campos.
+* Identificar campos obrigatórios.
+* Apresentar mensagens de erro claras.
+* Informar o estado de validação dos campos.
+* Utilizar elementos semânticos para facilitar a interpretação do conteúdo.
+
+### Navegação via Tecla Tab
+
+A navegação pelo teclado deve permitir que o usuário percorra os elementos interativos sem depender exclusivamente do mouse.
+
+A tecla Tab deve seguir uma ordem lógica entre os campos e botões do formulário.
+
+O elemento que estiver selecionado deve apresentar um indicador visual de foco, permitindo que o usuário identifique sua posição na interface.
+
+Essa prática contribui para a acessibilidade e melhora a experiência de navegação.
+
+
+
+## Aula 09: UX de Tabelas de Dados e Telas de Perfil
+
+### 1. Pesquisa Teórica - UX para Tabelas Corporativas
+
+#### Alinhamento de Dados
+
+O alinhamento dos dados em tabelas é fundamental para melhorar a organização, a leitura e a identificação das informações.
+
+* **Textos:** devem ser alinhados à esquerda, facilitando a leitura e a identificação dos conteúdos.
+* **Números e valores monetários:** devem ser alinhados à direita, permitindo melhor comparação entre valores.
+* **Status e ações rápidas:** podem ser centralizados para facilitar a identificação visual e a interação do usuário.
+
+#### Filtros e Busca
+
+Os recursos de busca e filtragem permitem localizar informações de maneira rápida e eficiente.
+
+* O campo de pesquisa principal deve ficar posicionado na parte superior, acima da tabela, preferencialmente à esquerda ou à direita.
+* Filtros avançados devem ser agrupados ou organizados em menus suspensos (dropdowns), evitando excesso de elementos na interface.
+* A organização desses recursos deve facilitar o acesso sem comprometer o espaço disponível para os dados.
+
+#### Hierarquia Visual
+
+A hierarquia visual contribui para a organização e a legibilidade das tabelas, facilitando a interpretação das informações.
+
+* **Sticky Header:** utilização de cabeçalhos fixos em tabelas extensas, permitindo que os títulos das colunas permaneçam visíveis durante a rolagem.
+* **Zebra Striping:** alternância de cores entre as linhas para facilitar o acompanhamento horizontal das informações.
+* **Bordas sutis:** utilizadas para separar os dados sem sobrecarregar visualmente a interface.
+
+### 2. Especificação do Protótipo (Figma)
+
+#### Link do Projeto no Figma
+
+https://www.figma.com/design/B38eajpwRiiTM9U4xk7He3/Blog-Culin%C3%A1rio?node-id=12-508&t=i3UdOilJz2DmAweJ-1
+
+#### Telas Desenvolvidas
+
+##### 1. Perfil de Usuário
+
+Tela destinada à visualização e edição das informações de um usuário, permitindo consultar seus dados pessoais e identificar seu nível de permissão no sistema.
+
+Elementos presentes:
+
+* Avatar ou foto de perfil.
+* Nome completo do usuário.
+* Cargo ou função.
+* Dados pessoais.
+* Formulário para edição das informações.
+* Nível de permissão do usuário.
+* Botão para salvar alterações.
+
+##### 2. Área de Consulta (Tabela de Dados)
+
+Tela destinada à consulta e ao gerenciamento de usuários por meio de uma tabela organizada.
+
+Elementos presentes:
+
+* Lista de usuários organizada em colunas.
+* Campo de pesquisa para localizar registros.
+* Opções de ordenação dos dados.
+* Paginação para navegação entre os registros.
+* Ação de editar informações.
+* Ação de excluir usuários.
+
+### 3. Considerações Finais
+
+A aplicação dos conceitos de UI/UX em tabelas corporativas e telas de perfil contribui para a criação de interfaces mais organizadas, intuitivas e acessíveis.
+
+A utilização de alinhamento adequado, filtros, hierarquia visual e recursos de navegação facilita a consulta das informações e melhora a experiência do usuário.
+
+O protótipo desenvolvido no Figma permite representar visualmente essas diretrizes antes de uma possível implementação em código.
