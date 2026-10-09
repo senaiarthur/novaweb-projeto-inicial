@@ -14,11 +14,7 @@ turma: TDE-1BAA
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Perfil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous">
-        </script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -29,7 +25,7 @@ turma: TDE-1BAA
 
     <main>
 
-        <form class="form">
+        <form class="form" onsubmit="return false;">
 
             <div class="alert alert-info" role="alert" id="mensagem" style="display: none;"></div>
 
@@ -59,7 +55,7 @@ turma: TDE-1BAA
                 <input type="radio" name="perfil" value="Aluno" required>
                 <label>Aluno</label>
 
-                <input type="radio" name="perfil" value="Aluno">
+                <input type="radio" name="perfil" value="Professor">
                 <label>Professor</label>
             </div>
 
@@ -106,9 +102,32 @@ turma: TDE-1BAA
 
     <script type="text/javascript">
         function mensagem() {
+            const formulario = document.querySelector('.form');
             const msg = document.querySelector('#mensagem');
+            const cpf = document.querySelector('#cpf').value;
+            const interesses = document.querySelectorAll(
+                'input[name="interesses"]:checked'
+            );
+
             msg.style.display = 'block';
-            msg.textContent = 'Perfil salvo com sucesso'
+
+            if (!formulario.checkValidity()) {
+                formulario.reportValidity();
+                msg.textContent = 'Preencha os campos obrigatórios.';
+                return;
+            }
+
+            if (cpf.replace(/\D/g, '').length !== 11) {
+                msg.textContent = 'CPF inválido! Deve conter 11 números.';
+                return;
+            }
+
+            if (interesses.length === 0) {
+                msg.textContent = 'Selecione pelo menos um interesse.';
+                return;
+            }
+
+            msg.textContent = 'Perfil salvo com sucesso!'
         }
 
         function validaCPF() {
@@ -118,7 +137,7 @@ turma: TDE-1BAA
             if (cpf.length !== 11) {
                 const msg = document.querySelector('#mensagem');
                 msg.style.display = 'block';
-                msg.textContent = 'CPF inválido! Deve conter 11 dígitos.';
+                msg.textContent = 'CPF inválido! Deve conter 11 números.';
             }
         }
     </script>
