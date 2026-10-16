@@ -1,0 +1,97 @@
+<!--
+Descricao: Aula 14 - CSS para Formulários
+nome_arquivo: perfil.html
+nome_exercicio: Aula 14 - CSS para Formulários
+nome_aluno: Arthur Mazieri Alves
+email_aluno: arthur.mazieri@portalsesisp.org.br
+turma: TDE-1BAA
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - Formulários</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Perfil</h1>
+        <p>Aula 14 - CSS para Formulários</p>
+    </header>
+
+    <main>
+        <form class="form" onsubmit="return false;">
+
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"
+                    value="Arthur" disabled required>
+                <button type="button" onclick="habilitarCampo('nome')">
+                    Habilitar
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                    value="aluno@exemplo.com" disabled required>
+                <button type="button" onclick="habilitarCampo('email')">
+                    Habilitar
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento"
+                    value="2000-01-01" disabled>
+                <button type="button" onclick="habilitarCampo('nascimento')">
+                    Habilitar
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label for="sobre">Sobre mim:</label>
+                <input type="text" id="sobre" name="sobre"
+                    value="Estudante SESI/SENAI"
+                    disabled readonly>
+                <button type="button" onclick="habilitarCampo('sobre')">
+                    Habilitar
+                </button>
+            </div>
+
+            <p id="mensagem">Clique em Habilitar para editar um campo.</p>
+
+        </form>
+    </main>
+
+    <script>
+        function habilitarCampo(id) {
+            const campo = document.getElementById(id);
+            const mensagem = document.getElementById("mensagem");
+
+            campo.disabled = false;
+            campo.readOnly = false;
+            campo.focus();
+
+            mensagem.textContent =
+                "Campo " + campo.labels[0].textContent +
+                " habilitado. Ao sair dele, será desabilitado novamente.";
+        }
+
+        document.querySelectorAll(".form input").forEach(function(campo) {
+            campo.addEventListener("blur", function() {
+                campo.disabled = true;
+
+                document.getElementById("mensagem").textContent =
+                    "Campo desabilitado novamente.";
+            });
+        });
+    </script>
+
+</body>
+</html>
