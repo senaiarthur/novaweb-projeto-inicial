@@ -1,0 +1,113 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #263238;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #245b8f;
+    margin-bottom: 8px;
+}
+
+/* Formulário */
+.form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+/* Organização dos campos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8c2cc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Campo em foco */
+input:focus {
+    outline: 2px solid #8ab6e0;
+    border-color: #245b8f;
+}
+
+/* Campo desabilitado */
+input:disabled {
+    background-color: #e8ebef;
+    color: #626b73;
+    cursor: not-allowed;
+}
+
+/* Campo obrigatório */
+input:required {
+    border-left: 4px solid #d97706;
+}
+
+/* Campo somente leitura */
+input:read-only {
+    background-color: #fff3d6;
+}
+
+/* Botões */
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #245b8f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17436c;
+}
+
+button:focus {
+    outline: 2px solid #8ab6e0;
+    outline-offset: 2px;
+}
+
+/* Mensagem */
+#mensagem {
+    padding: 12px;
+    background-color: #edf4fa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+    .form {
+        padding: 18px;
+    }
+}
