@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários - Blog Culinário</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="topo">
+        <h2>♨ Blog Culinário</h2>
+        <div>🔔　👤 Rodrigo Attique</div>
+    </header>
+
+    <div class="container">
+
+        <aside class="menu">
+            <a href="../index.html">⌂ Dashboard</a>
+            <a class="ativo" href="usuarios.html">♟ Usuários</a>
+            <a href="login.html">↪ Sair</a>
+        </aside>
+
+        <main class="conteudo">
+
+            <h1>Usuários</h1>
+            <p>Administre os usuários na plataforma.</p>
+
+            <div class="pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar usuário...">
+                <button onclick="filtrarUsuarios()">Filtrar</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Tipo</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaUsuarios">
+
+                    <tr>
+                        <td>Rodrigo Attique</td>
+                        <td>Administrador</td>
+                        <td>Ativo</td>
+                        <td>✎　🗑</td>
+                    </tr>
+
+                    <tr>
+                        <td>Allan Lima</td>
+                        <td>Usuário</td>
+                        <td>Ativo</td>
+                        <td>✎　🗑</td>
+                    </tr>
+
+                    <tr>
+                        <td>Arthur Mazieri</td>
+                        <td>Administrador</td>
+                        <td>Ativo</td>
+                        <td>✎　🗑</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+
+    <footer>
+        Blog Culinário | Receitas | Home | Contato
+    </footer>
+
+</body>
+</html>
