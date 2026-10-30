@@ -100,7 +100,17 @@ O projeto utiliza a regra de cores 60-30-10.
 * **Montserrat:** Utilizada nos textos, menus e botões.
 
 
-## Sistema Administrativo Corporativo — NovaWeb Solutions
+# Projeto NovaWeb Studio
+
+Repositório inicial estruturado durante o treinamento de versionamento.
+
+## Requisitos do Sistema
+
+- Git instalado
+- Editor de código
+- Terminal ou Git Bash
+
+# Sistema Administrativo Corporativo — NovaWeb
 
 ## 1. Apresentação do Projeto
 
@@ -282,31 +292,38 @@ Serão considerados:
 A estrutura planejada para o projeto é:
 
 ```text
-blog-culinario/
+novaweb-projeto-inicial/
 │
-├── README.md
+├── Admin/
 │
 ├── assets/
+│   ├── css/
+│   ├── icons/
 │   ├── images/
-│   └── icons/
+│   └── js/
 │
-├── css/
-│   └── style.css
+├── dashboard.html
+├── lista.html
+├── login.html
 │
-├── js/
-│   └── script.js
+├── Blog_Culinario/
+│   ├── assets/
+│   │   ├── icons/
+│   │   └── images/
+│   │       └── receitas/
+│   │
+│   ├── css/
+│   ├── docs/
+│   │   └── wireframes/
+|   |        └── prototipos.md
+│   │
+│   ├── js/
+│   ├── pages/
+│   └── README.md
 │
-├── pages/
-│   ├── login.html
-│   ├── perfil.html
-│   └── consulta.html
+├── meu-repositorio-git/
 │
-└── docs/
-    ├── wireframes/
-    │   └── prototipos.md
-    │
-    └── planejamento/
-        └── cronograma.md
+└── README.md
 ```
 
 Os diretórios de implementação representam a organização prevista para a próxima fase do projeto.
@@ -383,3 +400,4 @@ A autenticação real e a consulta a dados operacionais dependerão de integraç
 - Modalidade: Desenvolvimento individual.
 - Repositório: [GitHub — blog-culinario](https://github.com/senaiarthur/blog-culinario)
 - Protótipos: [Figma](https://www.figma.com/design/B38eajpwRiiTM9U4xk7He3/Blog-Culin%C3%A1rio?node-id=1-13239&p=f&t=5z2pZp9k1WJl3wUx-0)
+- Cronograma: [Trello](https://trello.com/invite/b/6adb5b9386b05b58fb815cae/ATTI8918c203226c0ea7ca12ee0b8037df708FF64E0F/product-backlog)
