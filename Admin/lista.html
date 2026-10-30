@@ -6,38 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuários - Blog Culinário</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="../js/script.js" defer></script>
 
     <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
->
+    >
 
-<link
+    <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
->
+    >
 
-<link
+    <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
->
+    >
 
-    <script src="../js/script.js" defer></script>
 </head>
 <body>
 
     <header class="topo">
-        <h2>♨ Blog Culinário</h2>
-        <div>🔔　👤 Rodrigo Attique</div>
+
+        <h2 class="logo">
+            <img src="assets/icons/udon.svg" alt="">
+            Blog Culinário
+        </h2>
+
+        <div class="usuario-topo">
+            <img src="assets/icons/notifications.svg" alt="Notificações">
+            <img src="assets/icons/person.svg" alt="Perfil">
+            <div>
+                <strong>Rodrigo Attique</strong>
+                <small>Administrador</small>
+            </div>
+        </div>
+
     </header>
 
     <div class="container">
 
         <aside class="menu">
-            <a href="../index.html">⌂ Dashboard</a>
-            <a class="ativo" href="usuarios.html">♟ Usuários</a>
-            <a href="login.html">↪ Sair</a>
+
+            <a href="dashboard.html">
+                <img src="assets/icons/home.svg" alt="">
+                Dashboard
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/restaurant.svg" alt="">
+                Receitas
+            </a>
+
+            <a class="ativo" href="usuarios.html">
+                <img src="assets/icons/person.svg" alt="">
+                Usuários
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/folder.svg" alt="">
+                Categorias
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/block.svg" alt="">
+                Configurações
+            </a>
+
+            <a class="sair" href="login.html">
+                <img src="assets/icons/logout.svg" alt="">
+                Sair
+            </a>
+
         </aside>
 
         <main class="conteudo">
@@ -46,11 +87,25 @@
             <p>Administre os usuários na plataforma.</p>
 
             <div class="pesquisa">
-                <input type="text" id="pesquisa" placeholder="Pesquisar usuário...">
-                <button onclick="filtrarUsuarios()">Filtrar</button>
+
+                <div class="campo-pesquisa">
+                    <img src="assets/icons/search.svg" alt="">
+                    <input
+                        type="text"
+                        id="pesquisa"
+                        placeholder="Pesquisar usuário..."
+                    >
+                </div>
+
+                <button onclick="filtrarUsuarios()">
+                    <img src="assets/icons/filter.svg" alt="">
+                    Filtrar
+                </button>
+
             </div>
 
             <table>
+
                 <thead>
                     <tr>
                         <th>Usuário</th>
@@ -63,30 +118,73 @@
                 <tbody id="tabelaUsuarios">
 
                     <tr>
-                        <td>Rodrigo Attique</td>
+                        <td>
+                            <img class="icone-usuario" src="assets/icons/person.svg" alt="">
+                            <div>
+                                Rodrigo Attique
+                                <small>rodrigo@email.com</small>
+                            </div>
+                        </td>
                         <td>Administrador</td>
-                        <td>Ativo</td>
-                        <td>✎　🗑</td>
+                        <td><span class="status">Ativo</span></td>
+                        <td class="acoes-tabela">
+                            <button aria-label="Editar Rodrigo">
+                                <img src="assets/icons/edit_square.svg" alt="">
+                            </button>
+                            <button aria-label="Excluir Rodrigo">
+                                <img src="assets/icons/delete.svg" alt="">
+                            </button>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>Allan Lima</td>
+                        <td>
+                            <img class="icone-usuario" src="assets/icons/person.svg" alt="">
+                            <div>
+                                Allan Lima
+                                <small>allan@email.com</small>
+                            </div>
+                        </td>
                         <td>Usuário</td>
-                        <td>Ativo</td>
-                        <td>✎　🗑</td>
+                        <td><span class="status">Ativo</span></td>
+                        <td class="acoes-tabela">
+                            <button aria-label="Editar Allan">
+                                <img src="assets/icons/edit_square.svg" alt="">
+                            </button>
+                            <button aria-label="Excluir Allan">
+                                <img src="assets/icons/delete.svg" alt="">
+                            </button>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>Arthur Mazieri</td>
+                        <td>
+                            <img class="icone-usuario" src="assets/icons/person.svg" alt="">
+                            <div>
+                                Arthur Mazieri
+                                <small>arthur@email.com</small>
+                            </div>
+                        </td>
                         <td>Administrador</td>
-                        <td>Ativo</td>
-                        <td>✎　🗑</td>
+                        <td><span class="status">Ativo</span></td>
+                        <td class="acoes-tabela">
+                            <button aria-label="Editar Arthur">
+                                <img src="assets/icons/edit_square.svg" alt="">
+                            </button>
+                            <button aria-label="Excluir Arthur">
+                                <img src="assets/icons/delete.svg" alt="">
+                            </button>
+                        </td>
                     </tr>
 
                 </tbody>
+
             </table>
 
+            <p id="semResultado"></p>
+
         </main>
+
     </div>
 
     <footer>

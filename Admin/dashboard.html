@@ -5,41 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Blog Culinário</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
 
     <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
->
+    >
 
-<link
+    <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
->
+    >
 
-<link
+    <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
->
-
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    >
+    
 </head>
 <body>
 
     <header class="topo">
-        <h2>♨ Blog Culinário</h2>
-        <div>
-            <span>🔔</span>
-            <span>👤 Rodrigo Attique</span>
+        <h2 class="logo">
+            <img src="assets/icons/udon.svg" alt="">
+            Blog Culinário
+        </h2>
+
+        <div class="usuario-topo">
+            <img src="assets/icons/notifications.svg" alt="Notificações">
+            <img src="assets/icons/person.svg" alt="Perfil">
+            <div>
+                <strong>Rodrigo Attique</strong>
+                <small>Administrador</small>
+            </div>
         </div>
     </header>
 
     <div class="container">
 
         <aside class="menu">
-            <a class="ativo" href="index.html">⌂ Dashboard</a>
-            <a href="pages/usuarios.html">♟ Usuários</a>
-            <a href="pages/login.html">↪ Sair</a>
+
+            <a class="ativo" href="index.html">
+                <img src="assets/icons/home.svg" alt="">
+                Dashboard
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/restaurant.svg" alt="">
+                Receitas
+            </a>
+
+            <a href="pages/usuarios.html">
+                <img src="assets/icons/person.svg" alt="">
+                Usuários
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/folder.svg" alt="">
+                Categorias
+            </a>
+
+            <a href="#">
+                <img src="assets/icons/settings.svg" alt="">
+                Configurações
+            </a>
+
+            <a class="sair" href="pages/login.html">
+                <img src="assets/icons/logout.svg" alt="">
+                Sair
+            </a>
+
         </aside>
 
         <main class="conteudo">
@@ -48,24 +84,30 @@
             <h1>Rodrigo Attique</h1>
 
             <section class="perfil">
-                <div class="avatar">👤</div>
+
+                <img src="assets/icons/person.svg" alt="Foto do usuário">
+
                 <div>
                     <strong>Rodrigo Attique</strong>
-                    <p>Administrador</p>
+                    <small>Administrador</small>
                 </div>
-                <a href="pages/usuarios.html" class="botao">Ver Perfil</a>
+
+                <a href="pages/usuarios.html" class="botao">
+                    Ver Perfil
+                </a>
+
             </section>
 
             <section class="cartoes">
 
                 <div class="cartao">
-                    <h2>📄</h2>
+                    <img src="assets/icons/restaurant.svg" alt="">
                     <h3>3</h3>
                     <p>Receitas cadastradas</p>
                 </div>
 
                 <div class="cartao">
-                    <h2>✉️</h2>
+                    <img src="assets/icons/send.svg" alt="">
                     <h3>5</h3>
                     <p>Novas mensagens</p>
                 </div>
@@ -77,21 +119,21 @@
             <section class="acoes">
 
                 <div class="acao">
-                    <h3>＋</h3>
+                    <img src="assets/icons/restaurant.svg" alt="">
                     <strong>Nova receita</strong>
                     <p>Cadastre uma nova receita.</p>
                 </div>
 
                 <div class="acao">
-                    <h3>▤</h3>
+                    <img src="assets/icons/folder.svg" alt="">
                     <strong>Categorias</strong>
-                    <p>Consulte as categorias.</p>
+                    <p>Consulte as categorias cadastradas.</p>
                 </div>
 
                 <div class="acao">
-                    <h3>⚙</h3>
+                    <img src="assets/icons/settings.svg" alt="">
                     <strong>Configurações</strong>
-                    <p>Configure o sistema.</p>
+                    <p>Ajuste as preferências do sistema.</p>
                 </div>
 
             </section>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Blog Culinário</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/script.js" defer></script>
 
     <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
->
+    >
 
-<link
+    <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
->
+    >
 
-<link
+    <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
->
+    >
 
-    <script src="assets/js/script.js" defer></script>
 </head>
 <body class="pagina-login">
 
     <header class="cabecalho-login">
-        <h2>♨ Blog Culinário</h2>
-        <nav>
-            <a href="dashboard.html">Início</a>
-            <a href="usuarios.html">Usuários</a>
-        </nav>
+
+        <a href="dashboard.html" class="logo">
+            <img src="assets/icons/udon.svg" alt="">
+            Blog Culinário
+        </a>
+
     </header>
 
     <main class="login">
@@ -41,14 +43,29 @@
 
         <form id="formLogin">
 
-            <label>Nome de Usuário</label>
-            <input type="text" placeholder="Nome" required>
+            <label for="usuario">Nome de Usuário</label>
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Nome"
+                required
+            >
 
-            <label>E-mail</label>
-            <input type="email" placeholder="E-mail" required>
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="E-mail"
+                required
+            >
 
-            <label>Senha</label>
-            <input type="password" placeholder="Senha" required>
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                id="senha"
+                placeholder="Senha"
+                required
+            >
 
             <button type="submit">Entrar</button>
 
