@@ -1,0 +1,336 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF8F0;
+    color: #35533A;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+
+.topo {
+    background: #FFF8F0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.topo h2 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+/* Menu lateral */
+
+.container {
+    display: flex;
+    min-height: 75vh;
+}
+
+.menu {
+    width: 180px;
+    background: #7A9E7E;
+    padding: 20px 10px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.menu a:hover,
+.menu .ativo {
+    background: #C26046;
+}
+
+/* Conteúdo */
+
+.conteudo {
+    flex: 1;
+    padding: 30px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.boas-vindas {
+    color: #C26046;
+}
+
+/* Perfil */
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.avatar {
+    background: #ddd;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.botao {
+    margin-left: auto;
+    background: #C26046;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Cartões */
+
+.cartoes {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.cartao {
+    background: #FFF8F0;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    padding: 15px;
+    width: 180px;
+}
+
+.cartao h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+/* Ações rápidas */
+
+.acoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.acao {
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    padding: 15px;
+    width: 150px;
+}
+
+.acao h3 {
+    color: #C26046;
+    margin-bottom: 10px;
+}
+
+.acao p {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* Login */
+
+.pagina-login {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-login {
+    background: #7A9E7E;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-login a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.login {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.login form {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.login label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 13px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background: #C26046;
+    color: white;
+    cursor: pointer;
+}
+
+.links-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.links-login a {
+    color: #35533A;
+}
+
+/* Pesquisa e tabela */
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pesquisa input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.pesquisa button {
+    background: #7A9E7E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #A5C4A9;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* Rodapé */
+
+footer {
+    background: #7A9E7E;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Adaptação para celular */
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .menu a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .conteudo {
+        padding: 20px 12px;
+    }
+
+    .cartoes,
+    .acoes {
+        flex-wrap: wrap;
+    }
+
+    .cartao {
+        flex: 1;
+        min-width: 130px;
+    }
+
+    .acao {
+        width: calc(50% - 10px);
+    }
+
+    .perfil {
+        flex-wrap: wrap;
+    }
+
+    .pesquisa input {
+        width: 100%;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+    }
+
+    .topo {
+        padding: 12px;
+    }
+
+    .topo h2 {
+        font-size: 16px;
+    }
+}
