@@ -99,9 +99,189 @@ O projeto utiliza a regra de cores 60-30-10.
 * **Playfair Display:** Utilizada nos títulos.
 * **Montserrat:** Utilizada nos textos, menus e botões.
 
-### Estrutura do Projeto
 
-```
+## Sistema Administrativo Corporativo — NovaWeb Solutions
+
+## 1. Apresentação do Projeto
+
+O Sistema Administrativo Corporativo é um projeto de interface web desenvolvido no contexto da agência fictícia NovaWeb Solutions. A proposta consiste em planejar uma plataforma interna para auxiliar os colaboradores de uma empresa na autenticação, visualização de informações cadastrais e consulta de dados operacionais.
+
+O projeto contempla o planejamento dos recursos humanos e materiais, a gestão de prazos, a prototipagem das interfaces e a preparação dos recursos necessários para a futura implementação em HTML, CSS e JavaScript.
+
+## 2. Objetivo
+
+Planejar e estruturar a interface de um sistema web corporativo, considerando usabilidade, responsividade, organização dos componentes, desempenho dos recursos digitais e integração entre as etapas de design e desenvolvimento.
+
+## 3. Escopo do Projeto
+
+O sistema será composto por três telas principais:
+
+### 3.1 Tela de Autenticação (Login)
+
+- Formulário de acesso dos colaboradores.
+- Campo de identificação ou e-mail.
+- Campo de senha.
+- Botão de autenticação.
+- Tratamento visual de campos inválidos.
+- Mensagens de orientação e erro.
+
+### 3.2 Página de Perfil do Usuário
+
+- Identificação do colaborador.
+- Exibição de informações cadastrais.
+- Apresentação de informações profissionais.
+- Organização visual dos dados pessoais.
+
+### 3.3 Área de Consulta (Tabela de Dados)
+
+- Tabela para apresentação de informações operacionais.
+- Organização dos registros em colunas e linhas.
+- Campo de pesquisa.
+- Representação visual dos resultados filtrados.
+- Adaptação da tabela para dispositivos móveis.
+
+## 4. Protótipos de Alta Fidelidade
+
+Os protótipos das três interfaces foram desenvolvidos no Figma e servirão como referência visual para a futura implementação.
+
+**Arquivo do projeto:**
+
+[Visualizar protótipos no Figma](https://www.figma.com/design/B38eajpwRiiTM9U4xk7He3/Blog-Culin%C3%A1rio?node-id=1-13239&p=f&t=5z2pZp9k1WJl3wUx-0)
+
+Telas previstas:
+
+- Tela de Login — Desktop e Mobile.
+- Perfil do Usuário — Desktop e Mobile.
+- Consulta de Dados — Desktop e Mobile.
+
+Os protótipos representam a estrutura visual das interfaces e orientam a organização dos componentes durante a implementação.
+
+## 5. Matriz de Recursos Humanos
+
+O planejamento considera os seguintes papéis profissionais:
+
+### Gerente de Projeto
+
+- Organizar as etapas do projeto.
+- Definir prioridades e prazos.
+- Acompanhar a execução das atividades.
+- Coordenar a integração dos recursos.
+
+### UX/UI Designer
+
+- Desenvolver as interfaces no Figma.
+- Organizar grids e componentes.
+- Planejar a experiência de navegação.
+- Criar versões Desktop e Mobile.
+
+### Desenvolvedor Front-end
+
+- Implementar a estrutura utilizando HTML5.
+- Desenvolver a estilização com CSS3.
+- Implementar interações com JavaScript.
+- Integrar as três telas.
+
+### Analista de Qualidade (QA)
+
+- Verificar a responsividade.
+- Conferir os formulários e seus estados visuais.
+- Identificar inconsistências de interface.
+- Realizar testes de navegação e apresentação.
+
+### Stakeholder (Cliente)
+
+- Avaliar os protótipos apresentados.
+- Validar a organização das informações.
+- Aprovar as interfaces antes da implementação.
+
+**Organização individual:** o projeto será desenvolvido individualmente, com simulação dos papéis de Gerente de Projeto, UX/UI Designer, Desenvolvedor Front-end e Analista de Qualidade. O Stakeholder representa o cliente fictício responsável pela validação das entregas.
+
+## 6. Matriz de Recursos Materiais
+
+| Recurso | Finalidade |
+|---|---|
+| Computador | Ambiente de trabalho e desenvolvimento |
+| Internet | Acesso às ferramentas e serviços |
+| Figma | Criação e edição dos protótipos |
+| Visual Studio Code | Edição dos arquivos do projeto |
+| Git | Controle de versão |
+| GitHub | Armazenamento e publicação do projeto |
+| Squoosh | Compressão e conversão de imagens |
+| SVG Repo | Pesquisa de ícones vetoriais |
+| Unsplash e Pexels | Pesquisa de imagens |
+| Navegadores | Testes de compatibilidade e responsividade |
+
+As ferramentas selecionadas permitem realizar o planejamento e a futura implementação utilizando recursos gratuitos ou planos gratuitos disponíveis, respeitando as condições de uso e licenciamento de cada serviço e material.
+
+## 7. Cronograma Sequenciado de Desenvolvimento e Integração
+
+O cronograma foi organizado em oito etapas, com duração estimada de dez dias úteis.
+
+| Etapa | Atividade | Duração | Responsável |
+|---|---|---|---|
+| 1 | Análise de requisitos e identidade visual | 1 dia | Gerente de Projeto |
+| 2 | Prototipagem da tela de Login | 1 dia | UX/UI Designer |
+| 3 | Prototipagem do Perfil | 1 dia | UX/UI Designer |
+| 4 | Prototipagem da Consulta | 1 dia | UX/UI Designer |
+| 5 | Adaptação Mobile e validação | 2 dias | Designer e Stakeholder |
+| 6 | Seleção e otimização de imagens | 1 dia | Desenvolvedor |
+| 7 | Organização dos recursos e documentação | 1 dia | Gerente de Projeto |
+| 8 | Revisão e entrega para desenvolvimento HTML | 1 dia | QA e Desenvolvedor |
+
+### Sequência das atividades
+
+1. Análise dos requisitos do sistema.
+2. Definição da estrutura visual.
+3. Prototipagem das três interfaces.
+4. Adaptação dos protótipos para dispositivos móveis.
+5. Validação das interfaces pelo cliente.
+6. Otimização dos recursos gráficos.
+7. Organização da documentação e dos arquivos.
+8. Liberação do projeto para a etapa de implementação.
+
+As atividades foram distribuídas de acordo com suas dependências, evitando iniciar a implementação antes da validação das interfaces.
+
+## 8. Planejamento de Performance Web
+
+O projeto considera a otimização dos recursos digitais para melhorar o carregamento e a experiência de utilização em diferentes dispositivos.
+
+### Formatos de arquivos
+
+- WebP: formato recomendado para imagens fotográficas, visando reduzir o tamanho dos arquivos.
+- SVG: formato vetorial recomendado para ícones e elementos gráficos.
+- PNG: utilização quando houver necessidade de transparência ou compatibilidade específica.
+
+### Ferramenta de otimização
+
+O Squoosh será utilizado para comprimir e converter imagens, permitindo reduzir o tamanho dos arquivos antes de adicioná-los ao repositório.
+
+### Boas práticas
+
+- Redimensionar imagens de acordo com sua utilização.
+- Evitar arquivos com resolução desnecessariamente elevada.
+- Utilizar imagens comprimidas.
+- Priorizar SVG para ícones.
+- Evitar carregar imagens que não sejam necessárias.
+- Testar o carregamento em dispositivos móveis.
+
+## 9. Responsividade e Interface
+
+As interfaces deverão ser planejadas para funcionar em computadores, tablets e celulares.
+
+Serão considerados:
+
+- Organização por grids e alinhamentos.
+- Adaptação dos componentes conforme a largura da tela.
+- Campos de formulário com estados visuais de erro.
+- Tabelas com comportamento adequado em telas menores.
+- Botões e campos com dimensões adequadas para interação.
+- Hierarquia visual e legibilidade.
+
+## 10. Estrutura de Diretórios
+
+A estrutura planejada para o projeto é:
+
+```text
 blog-culinario/
 │
 ├── README.md
@@ -117,372 +297,89 @@ blog-culinario/
 │   └── script.js
 │
 ├── pages/
-│   ├── receitas.html
-│   ├── receita.html
-│   └── contato.html
+│   ├── login.html
+│   ├── perfil.html
+│   └── consulta.html
 │
-├── docs/
-│    └── wireframes/
-│        ├── home.png
-│        ├── receita.png
-│        └── contato.png
-│
-└── index.html
+└── docs/
+    ├── wireframes/
+    │   └── prototipos.md
+    │
+    └── planejamento/
+        └── cronograma.md
 ```
 
-### EAP — Estrutura Analítica do Projeto
-                  
-1.0 - Planejamento               
-1.1 - Definição do tema          
-1.2 - Definição do objetivo      
-1.3 - Definição do escopo        
-1.4 - Levantamento de requisitos 
-2.0 - Arquitetura e UX           
-2.1 - Pesquisa de referências    
-2.2 - Árvore de navegação        
-2.3 - Criação dos wireframes     
-3.0 - Identidade visual          
-3.1 - Definição das cores        
-3.2 - Definição da tipografia    
-4.0 - Estrutura técnica          
-4.1 - Estrutura de pastas        
-4.2 - Definição dos arquivos     
-4.3 - Definição das tecnologias  
-5.0 - Desenvolvimento            
-5.1 - HTML                       
-5.2 - CSS                        
-5.3 - JavaScript                 
-6.0 - Testes                     
-6.1 - Testes de navegação        
-6.2 - Testes de responsividade   
-6.3 - Correção de problemas      
-7.0 - Entrega                    
-7.1 - Revisão                    
-7.2 - Versionamento              
-7.3 - Publicação no GitHub       
+Os diretórios de implementação representam a organização prevista para a próxima fase do projeto.
 
-### Cronograma
+## 11. Infraestrutura e Tecnologias
 
-O cronograma do projeto foi organizado por etapas semanais, distribuindo as atividades de forma sequencial para facilitar o acompanhamento do desenvolvimento.
+O desenvolvimento será realizado em ambiente local, utilizando um computador com acesso à internet.
 
-Semana 1 - planejamento, definição de requisitos e arquitetura de navegação
-Semana 2 - desenvolvimento dos wireframes, identidade visual e estrutura de pastas
-Semana 3 - implementação da estrutura HTML e estilização com CSS
-Semana 4 - implementação de JavaScript, testes, revisão e entrega final
+Ferramentas e tecnologias previstas:
 
-### Equipe e Responsabilidades
+- HTML5: estruturação das páginas.
+- CSS3: estilização e responsividade.
+- JavaScript: interações e funcionalidades visuais.
+- Figma: prototipagem.
+- Visual Studio Code: ambiente de edição.
+- Git: versionamento.
+- GitHub: hospedagem do repositório.
 
-O projeto utiliza os papéis do Scrum como referência para organização das atividades.
+A plataforma escolhida é a Web, permitindo o acesso ao sistema por navegadores em diferentes dispositivos.
 
-Product Owner - definir objetivos e prioridades do projeto
-Scrum Master - organizar atividades e acompanhar prazos
-UX/UI Designer - desenvolver arquitetura da informação, wireframes e identidade visual
-Desenvolvedor - implementar o site
-QA - realizar testes e verificar a qualidade do sistema
+## 12. Controle de Versão
 
-### Recursos Materiais
+O Git será utilizado para acompanhar as alterações realizadas durante o projeto.
 
-Para o desenvolvimento serão utilizados:
+O GitHub será utilizado para armazenar o repositório remoto e disponibilizar a documentação.
 
-* Computador ou notebook;
-* Conexão com a Internet;
-* Visual Studio Code;
-* Git;
-* GitHub;
-* Navegador Web;
-* Ferramenta de criação de wireframes.
-
-### Infraestrutura
-
-O desenvolvimento será realizado localmente em um computador utilizando o Visual Studio Code. O Git será utilizado para controle de versão e o GitHub para armazenamento remoto do projeto.
-
-A estrutura será:
-
-```
-Computador -> Visual Studio Code -> Git -> GitHub
-```
-
-### Plataforma Computacional
-
-A plataforma escolhida é a Web.
-
-As principais tecnologias utilizadas serão:
-
-HTML5;
-CSS3;
-JavaScript;
-Git;
-GitHub.
-
-A plataforma Web foi escolhida porque permite acessar o site por meio de navegadores em diferentes dispositivos.
-
-### Controle de Versão
-
-O projeto utiliza Git para controle de versão e GitHub para armazenamento do repositório.
-
-Principais comandos utilizados:
+Principais comandos:
 
 ```bash
-git init
+git status
 git add .
-git commit -m "mensagem do commit"
-git push
+git commit -m "Atualização da documentação"
+git push origin main
 ```
 
-### Especificação de Hardware
+## 13. Critérios de Validação
 
-O desenvolvimento será realizado em um computador ou notebook com configuração adequada para executar as ferramentas utilizadas no projeto.
+Antes da liberação para desenvolvimento, deverão ser conferidos:
 
-* Processador: Dual Core ou superior.
-* Memória RAM: 8 GB ou superior.
-* Armazenamento: espaço disponível para os arquivos do projeto.
-* Conexão com a Internet.
+- As três interfaces estão prototipadas.
+- As versões Desktop e Mobile estão disponíveis.
+- Os formulários possuem representação visual de erros.
+- A tabela possui campo de pesquisa.
+- Os recursos gráficos estão otimizados.
+- A documentação está organizada.
+- O cliente realizou a validação das interfaces.
 
-### Infraestrutura e Hospedagem
+## 14. Próximas Etapas
 
-A versão final do site será hospedada no GitHub Pages, permitindo que o Blog Culinário seja acessado pela Internet através de um navegador.
+Após a aprovação do planejamento, o projeto poderá seguir para:
 
-### Mapeamento de Requisitos e Componentes
+1. Implementação da estrutura HTML.
+2. Desenvolvimento dos estilos CSS.
+3. Implementação das interações JavaScript.
+4. Integração das três telas.
+5. Testes de responsividade.
+6. Verificação de desempenho.
+7. Revisão e publicação da implementação.
 
-Os requisitos do projeto estão relacionados aos principais componentes da aplicação:
+A autenticação real e a consulta a dados operacionais dependerão de integração futura com serviços de back-end.
 
-* **RF01:** Página inicial.
-* **RF02:** Página de receitas.
-* **RF03:** Menu de navegação entre as páginas.
-* **RF04:** Página de conteúdo das receitas.
-* **RF05:** Página de contato.
+## 15. Status do Projeto
 
-Os requisitos não funcionais são aplicados principalmente na estrutura HTML semântica, estilização com CSS, organização dos arquivos, responsividade e compatibilidade com navegadores modernos.
+**Etapa atual:** Planejamento e prototipagem das interfaces.
 
-### Cronograma de Desenvolvimento
+**Situação:** Documentação e recursos em organização para a futura fase de desenvolvimento.
 
-O desenvolvimento do projeto será realizado de forma sequencial, considerando as etapas já concluídas e as próximas atividades.
+## 16. Informações do Projeto
 
-**07/08/2026:** Pesquisa de referências, estudo de UX e criação dos wireframes.
-**Responsável:** Desenvolvedor.
-
-**13/08/2026:** Definição da identidade visual, paleta de cores, tipografia e organização dos assets.
-**Responsável:** Desenvolvedor.
-
-**14/08/2026:** Atualização da documentação, arquitetura e planejamento do projeto.
-**Responsável:** Desenvolvedor.
-
-**15/08/2026:** Desenvolvimento da estrutura das páginas utilizando HTML semântico.
-**Responsável:** Desenvolvedor.
-
-**16/08/2026:** Implementação da identidade visual utilizando CSS.
-**Responsável:** Desenvolvedor.
-
-**17/08/2026:** Integração das páginas e dos recursos visuais.
-**Responsável:** Desenvolvedor.
-
-**18/08/2026:** Testes de navegação, funcionamento e responsividade.
-**Responsável:** Desenvolvedor.
-
-**19/08/2026:** Correções e revisão final do projeto.
-**Responsável:** Desenvolvedor.
-
-**20/08/2026:** Versionamento e publicação da versão final.
-**Responsável:** Desenvolvedor.
-
-
-
-### Próximas Etapas
-
-Após a conclusão do planejamento, serão realizadas as seguintes atividades:
-
-1. Desenvolvimento da estrutura HTML;
-2. Aplicação dos estilos CSS;
-3. Implementação das funcionalidades JavaScript;
-4. Integração das páginas;
-5. Testes de navegação e responsividade;
-6. Correção de problemas;
-7. Atualização da documentação;
-8. Publicação da versão final.
-
-### Status do Projeto
-
-**Etapa atual:** Planejamento e estruturação da SA01.
-
-**Situação:** Pronto para a etapa de desenvolvimento.
-
-### Informações do Projeto
-
-**Projeto:** Blog Culinário
-**Curso:** Técnico em Desenvolvimento de Sistemas
-**Unidade Curricular:** Projetos de Software
-**Instituição:** SENAI
-
-
-# Projeto Nova-Web - Especificações de UI/UX (Tela de Login)
-
-## 1. Conceitos de Usabilidade em Formulários
-
-### Labels vs. Placeholders
-
-As labels são utilizadas para identificar permanentemente os campos de um formulário, indicando qual informação deve ser preenchida. Já os placeholders apresentam exemplos ou orientações dentro dos campos.
-
-O placeholder não deve substituir a label, pois seu conteúdo desaparece quando o usuário começa a digitar, dificultando a identificação do campo. A utilização de labels melhora a clareza, a usabilidade e a acessibilidade do formulário.
-
-### Hierarquia Visual
-
-A hierarquia visual organiza os elementos da interface de acordo com sua importância, direcionando a atenção do usuário para as ações principais.
-
-* **Primary Button:** botão de ação principal, como "Entrar". Deve possuir maior destaque visual, utilizando uma cor de fundo diferenciada para facilitar sua identificação.
-* **Secondary Button:** botões de ações complementares, como "Criar Conta" e "Esqueci a Senha". Devem apresentar menor destaque visual, evitando competir com a ação principal.
-
-Essa diferenciação facilita a navegação e torna a interação mais intuitiva.
-
-## 2. Estados de Validação dos Campos de Entrada (Input States)
-
-Os estados dos campos de entrada indicam visualmente a situação de cada elemento durante a utilização do formulário.
-
-### Default (Padrão)
-
-Representa o estado inicial do campo, antes de qualquer interação do usuário.
-
-* Borda em cor neutra.
-* Label visível e legível.
-* Fundo que permita identificar claramente a área de preenchimento.
-
-### Focus (Foco)
-
-Indica que o usuário selecionou ou está navegando por determinado campo.
-
-* Alteração da cor da borda para destacar o campo.
-* Utilização de um contorno visual (outline) ou anel de foco.
-* Destaque suficiente para facilitar a identificação do elemento ativo.
-
-### Error (Erro)
-
-Indica que uma informação foi preenchida incorretamente ou não atende aos requisitos de validação.
-
-* Borda em tom vermelho.
-* Mensagem explicativa abaixo do campo.
-* Orientação clara sobre como corrigir o problema.
-
-O erro não deve ser indicado apenas pela cor, sendo necessário apresentar uma mensagem textual.
-
-### Success (Sucesso)
-
-Indica que o campo foi preenchido corretamente e passou pela validação.
-
-* Borda em tom verde.
-* Indicador visual de confirmação, como um ícone de verificação.
-* Feedback claro sobre o preenchimento correto.
-
-### Disabled (Desabilitado)
-
-Representa um campo temporariamente indisponível para interação.
-
-* Contraste visual reduzido.
-* Aparência diferenciada dos campos ativos.
-* Indicação de que o usuário não pode realizar alterações naquele momento.
-
-## 3. Padrões de Acessibilidade
-
-### Contraste de Cores
-
-A interface deve utilizar combinações de cores que garantam a legibilidade dos textos e dos elementos visuais.
-
-De acordo com as diretrizes WCAG, o contraste mínimo recomendado no nível AA é:
-
-* **Texto comum:** proporção mínima de 4,5:1.
-* **Texto grande:** proporção mínima de 3:1.
-
-Esses padrões facilitam a leitura, inclusive para pessoas com baixa visão ou dificuldades de percepção de cores.
-
-### Feedback para Leitores de Tela
-
-Os formulários devem apresentar informações que possam ser interpretadas por leitores de tela, permitindo que pessoas com deficiência visual compreendam e utilizem a interface.
-
-Boas práticas incluem:
-
-* Associar corretamente as labels aos campos.
-* Identificar campos obrigatórios.
-* Apresentar mensagens de erro claras.
-* Informar o estado de validação dos campos.
-* Utilizar elementos semânticos para facilitar a interpretação do conteúdo.
-
-### Navegação via Tecla Tab
-
-A navegação pelo teclado deve permitir que o usuário percorra os elementos interativos sem depender exclusivamente do mouse.
-
-A tecla Tab deve seguir uma ordem lógica entre os campos e botões do formulário.
-
-O elemento que estiver selecionado deve apresentar um indicador visual de foco, permitindo que o usuário identifique sua posição na interface.
-
-Essa prática contribui para a acessibilidade e melhora a experiência de navegação.
-
-
-
-## Aula 09: UX de Tabelas de Dados e Telas de Perfil
-
-### 1. Pesquisa Teórica - UX para Tabelas Corporativas
-
-#### Alinhamento de Dados
-
-O alinhamento dos dados em tabelas é fundamental para melhorar a organização, a leitura e a identificação das informações.
-
-* **Textos:** devem ser alinhados à esquerda, facilitando a leitura e a identificação dos conteúdos.
-* **Números e valores monetários:** devem ser alinhados à direita, permitindo melhor comparação entre valores.
-* **Status e ações rápidas:** podem ser centralizados para facilitar a identificação visual e a interação do usuário.
-
-#### Filtros e Busca
-
-Os recursos de busca e filtragem permitem localizar informações de maneira rápida e eficiente.
-
-* O campo de pesquisa principal deve ficar posicionado na parte superior, acima da tabela, preferencialmente à esquerda ou à direita.
-* Filtros avançados devem ser agrupados ou organizados em menus suspensos (dropdowns), evitando excesso de elementos na interface.
-* A organização desses recursos deve facilitar o acesso sem comprometer o espaço disponível para os dados.
-
-#### Hierarquia Visual
-
-A hierarquia visual contribui para a organização e a legibilidade das tabelas, facilitando a interpretação das informações.
-
-* **Sticky Header:** utilização de cabeçalhos fixos em tabelas extensas, permitindo que os títulos das colunas permaneçam visíveis durante a rolagem.
-* **Zebra Striping:** alternância de cores entre as linhas para facilitar o acompanhamento horizontal das informações.
-* **Bordas sutis:** utilizadas para separar os dados sem sobrecarregar visualmente a interface.
-
-### 2. Especificação do Protótipo (Figma)
-
-#### Link do Projeto no Figma
-
-https://www.figma.com/design/B38eajpwRiiTM9U4xk7He3/Blog-Culin%C3%A1rio?node-id=12-508&t=i3UdOilJz2DmAweJ-1
-
-#### Telas Desenvolvidas
-
-##### 1. Perfil de Usuário
-
-Tela destinada à visualização e edição das informações de um usuário, permitindo consultar seus dados pessoais e identificar seu nível de permissão no sistema.
-
-Elementos presentes:
-
-* Avatar ou foto de perfil.
-* Nome completo do usuário.
-* Cargo ou função.
-* Dados pessoais.
-* Formulário para edição das informações.
-* Nível de permissão do usuário.
-* Botão para salvar alterações.
-
-##### 2. Área de Consulta (Tabela de Dados)
-
-Tela destinada à consulta e ao gerenciamento de usuários por meio de uma tabela organizada.
-
-Elementos presentes:
-
-* Lista de usuários organizada em colunas.
-* Campo de pesquisa para localizar registros.
-* Opções de ordenação dos dados.
-* Paginação para navegação entre os registros.
-* Ação de editar informações.
-* Ação de excluir usuários.
-
-### 3. Considerações Finais
-
-A aplicação dos conceitos de UI/UX em tabelas corporativas e telas de perfil contribui para a criação de interfaces mais organizadas, intuitivas e acessíveis.
-
-A utilização de alinhamento adequado, filtros, hierarquia visual e recursos de navegação facilita a consulta das informações e melhora a experiência do usuário.
-
-O protótipo desenvolvido no Figma permite representar visualmente essas diretrizes antes de uma possível implementação em código.
+- Projeto: Sistema Administrativo Corporativo.
+- Agência fictícia: NovaWeb Solutions.
+- Curso: Técnico em Desenvolvimento de Sistemas.
+- Instituição: SENAI.
+- Modalidade: Desenvolvimento individual.
+- Repositório: [GitHub — blog-culinario](https://github.com/senaiarthur/blog-culinario)
+- Protótipos: [Figma](https://www.figma.com/design/B38eajpwRiiTM9U4xk7He3/Blog-Culin%C3%A1rio?node-id=1-13239&p=f&t=5z2pZp9k1WJl3wUx-0)
